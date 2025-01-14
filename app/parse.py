@@ -102,7 +102,7 @@ def load_page(url: str) -> WebDriver:
             load_btn.click()
             time.sleep(0.1)
     except NoSuchElementException:
-        logging.info(f"Cand load more on {url}")
+        logging.info(f"Can't load more on {url}")
 
     return driver
 
